@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given Fashionova - Services</title>
+    <style>
+        body {
+            background-image: url('images/home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+        header {
+            background-image: url('images/home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1, nav {
+            position: relative;
+            z-index: 2;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: #ffd700;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            min-height: 80vh; /* Ensure the main content takes up at least 80% of the viewport height */
+        }
+        h2 {
+            margin-top: 40px;
+            font-size: 24px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            color: #000;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-image: url('images/home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            position: relative;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <a href="Home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="portfolio.html">Portfolio</a> |
+            <a href="services.html">Services</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Personal Styling</h2>
+            <p>At Given Fashionova, we offer personalized styling services to help you find the perfect look for any occasion. Our team of experts will work with you to understand your style preferences and create a wardrobe that reflects your unique personality.</p>
+        </section>
+
+        <section>
+            <h2>Custom Design</h2>
+            <p>We provide custom design services for those who want something truly special. Whether it's a bespoke dress for a special event or a unique piece for your everyday wardrobe, our designers will bring your vision to life with precision and artistry.</p>
+        </section>
+
+        <section>
+            <h2>Fashion Consulting</h2>
+            <p>Our fashion consulting services are designed to help brands and individuals navigate the ever-evolving fashion landscape. From trend analysis to brand development, we offer expert advice to ensure you stay ahead in the world of fashion.</p>
+        </section>
+
+        <section>
+            <h2>Wardrobe Revamp</h2>
+            <p>Revamp your wardrobe with our comprehensive wardrobe revamp service. We'll help you curate a collection of versatile and stylish pieces that fit your lifestyle and personal taste, making getting dressed every day a breeze.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Given Fashionova &copy; 2024. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

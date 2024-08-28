@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given Fashionova - Portfolio</title>
+    <style>
+        body {
+            background-image: url('images/home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+        header {
+            background-image: url('images/home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1, nav {
+            position: relative;
+            z-index: 2;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: #ffd700;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            min-height: 80vh; /* Ensure the main content takes up at least 80% of the viewport height */
+        }
+        h2 {
+            margin-top: 40px;
+            font-size: 24px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            color: #000;
+        }
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-image: url('images/home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            position: relative;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <a href="Home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="portfolio.html">Portfolio</a> |
+            <a href="services.html">Services</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Projects</h2>
+            <p>Welcome to my portfolio. Here, you'll find a collection of my work showcasing my passion for fashion and design. Each project is a reflection of my creative vision and dedication to producing high-quality, stylish pieces.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <img src="images/project1.jpg" alt="Fashion Project 1" style="width: 40%;">
+                <img src="images/project2.jpg" alt="Fashion Project 2" style="width: 40%;">
+                <img src="images/project3.jpg" alt="Fashion Project 3" style="width: 40%;">
+                <img src="images/project4.jpg" alt="Fashion Project 4" style="width: 40%;">
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Designs</h2>
+            <p>Explore some of my most notable designs that have made an impact in the fashion world. Each piece represents a blend of creativity, elegance, and innovation.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <img src="images/design1.jpg" alt="Featured Design 1" style="width: 40%;">
+                <img src="images/design2.jpg" alt="Featured Design 2" style="width: 40%;">
+                <img src="images/design3.jpg" alt="Featured Design 3" style="width: 40%;">
+                <img src="images/design5.jpg" alt="Featured Design 4" style="width: 40%;">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Given Fashionova &copy; 2024. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

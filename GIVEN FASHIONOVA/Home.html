@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given Fashionova - Home</title>
+    <style>
+        body {
+            background-image: url('images/home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+        header {
+            background-image: url('images/home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1, nav {
+            position: relative;
+            z-index: 2;
+        }
+       nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: #ffd700;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            min-height: 80vh; /* Ensure the main content takes up at least 80% of the viewport height */
+        }
+        h2 {
+            margin-top: 40px;
+            font-size: 24px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            color: #000;
+        }
+        .slideshow-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .slideshow {
+            width: 48%;
+            position: relative;
+        }
+        .slideshow img {
+            display: none;
+            width: 40%; /* Ensure images take up the full width of the slideshow container */
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-image: url('images/home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            position: relative;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            margin-top: 20px;
+        }
+        footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        footer p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Given Fashionova</h1>
+        <nav>
+            <a href="Home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="portfolio.html">Portfolio</a> |
+            <a href="services.html">Services</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Slideshows</h2>
+            <p>My deep appreciation for the color blue reflects my love for its timeless elegance and calming essence. This color resonates with me, evoking a sense of serenity and sophistication that I strive to embody in my fashion and design choices</p>
+            <div class="slideshow-container">
+                <!-- Left Slideshow -->
+                <div class="slideshow" id="slideshow-left">
+                    <img src="images/1.jpg" alt="Left Fashion Image 1">
+                    <img src="images/2.jpg" alt="Left Fashion Image 2">
+                    <img src="images/3.jpg" alt="Left Fashion Image 3">
+                </div>
+                <!-- Right Slideshow -->
+                <div class="slideshow" id="slideshow-right">
+                    <img src="images/1R.jpg" alt="Right Fashion Image 1">
+                    <img src="images/2R.jpg" alt="Right Fashion Image 2">
+                    <img src="images/3R.jpg" alt="Right Fashion Image 3">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Fashion Video</h2>
+            <p>I have a habit of recording a video before heading out to assess my appearance. This practice not only helps me perfect my look but also serves as a personal ritual, ensuring I step out with confidence and clarity</p>
+            <div style="display: flex; justify-content: space-between;">
+                <video controls style="width: 48%; height: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <source src="videos/first video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls style="width: 48%; height: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <source src="videos/second video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>         
+        </section>
+
+        <section>
+            <h2>Gallery</h2>
+            <img src="images/gallery 1.jpg" alt="Fashion Image 4" style="width:40%; margin-right: 4%;">
+            <img src="images/gallery 2.jpg" alt="Fashion Image 5" style="width: 40%;">
+            <p>Location: Pretoria Union Building</p>
+            <p>The heat was intense, almost overwhelming, but it inspired me to capture the moment. The sun’s radiance added a unique glow to my photos, making the decision to take pictures there a powerful statement of resilience and style.</p>
+        </section>
+
+        <section>
+            <h2>Inspiration</h2>
+            <img src="images/tshedza mulaudzi.jpg" alt="Tshedza Mulaudzi" style="width:40%; margin-bottom: 20px;">
+            <p>Tshedza Mulaudzi is a great friend and my inspiration in the world of fashion. His unique style and creative vision have greatly influenced my work. His dedication to pushing the boundaries of fashion design is something I aspire to in my own creations.</p>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>Given Fashionova &copy; 2024. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndexLeft = 0;
+        let slideIndexRight = 0;
+
+        showSlides("slideshow-left", slideIndexLeft);
+        showSlides("slideshow-right", slideIndexRight);
+
+        function showSlides(slideshowId, slideIndex) {
+            let slides = document.querySelectorAll(`#${slideshowId} img`);
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            if (slideshowId === "slideshow-left") {
+                slideIndexLeft = (slideIndexLeft + 1) % slides.length;
+                setTimeout(() => showSlides(slideshowId, slideIndexLeft), 2000);
+            } else {
+                slideIndexRight = (slideIndexRight + 1) % slides.length;
+                setTimeout(() => showSlides(slideshowId, slideIndexRight), 2000);
+            }
+        }
+    </script>
+</body>
+</html>
